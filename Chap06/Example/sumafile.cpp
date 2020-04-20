@@ -7,11 +7,11 @@ const int SIZE = 60;
 int main()
 {
 	char filename[SIZE];
-	std::ifstream inFile;
-
-	std::cout << "Enter name of the data file: ";
+		std::cout << "Enter name of the data file: ";
 	std::cin.getline(filename, SIZE);
-	inFile.open(filename);
+	
+    std::ifstream inFile;
+    inFile.open(filename);
 
 	if (!inFile.is_open())
 	{
